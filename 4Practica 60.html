@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<!--esta es mi practica 60-->
+
+<head>
+    <title>Practica 60</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+
+    <script>
+        function f1(a) {
+            function f2(b) {
+                document.write('External function parameter:');
+                document.write('<br>');
+                document.write(a);
+                document.write('<br>');
+                document.write('Nested function parameter:');
+                document.write('<br>');
+                document.write(b);
+                document.write('<br>');
+                document.write('Local variable of the outer function:');
+                document.write('<br>');
+                document.write(c);
+            }
+            var c = 0;
+            f2(1);
+        }
+        f1(2);
+    </script>
+
+</body>
+
+</html>
